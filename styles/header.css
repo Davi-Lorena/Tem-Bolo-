@@ -1,0 +1,14 @@
+header {
+    display: grid;
+    justify-content: center;
+    & h1 {
+        color: #825e5e;
+        font-family: "Dancing Script", cursive;
+        font-size: 6rem;
+
+        & span {
+             color: #f8a2eb;
+        }
+
+    }
+}
