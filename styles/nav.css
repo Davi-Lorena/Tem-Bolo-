@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .5rem;
+    height: 8rem;
+    & #cake-logo {
+& img {
+    object-fit: cover;
+    width: 5.5rem;
+    aspect-ratio: 1;
+}
+
+    }
+
+    & a {
+        display: grid;
+        align-items: center;
+        padding: .5rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        background: linear-gradient(
+            45deg,
+            #f8a2eb 10%,
+            #eb8fc1 100%
+        );
+        transition: transform 500ms ease, background 500ms ease;
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            background: linear-gradient(
+                45deg,
+                #eb8fc1 5%,
+                #f8a2eb 100%
+            );
+        }
+    }
+}
