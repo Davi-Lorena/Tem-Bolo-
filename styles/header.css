@@ -1,14 +1,47 @@
 header {
     display: grid;
     justify-content: center;
+    gap: .5rem;
     & h1 {
         color: #825e5e;
         font-family: "Dancing Script", cursive;
         font-size: 6rem;
-
+text-align: center;
         & span {
              color: #f8a2eb;
         }
 
     }
+
+& p {
+    max-width: 22rem;
+    width: 100%;
+    font-family: "Sora", sans-serif;
+    font-size: .875rem;
+    text-align: center;
+    margin-inline: auto;
+
+    & strong {
+        color: #c58de7;
+        font-weight: 600;
+    }
+
+    & span {
+        font-size: .675rem;
+        color: rgb(97, 95, 95);
+    }
+}
+
+.cakes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 2rem 3rem;
+    & img {
+        max-width: 16rem;
+        border-radius: .75rem;
+        object-fit: cover;
+    }
+}
 }
