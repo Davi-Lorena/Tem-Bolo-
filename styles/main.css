@@ -33,4 +33,142 @@ main {
             border-radius: .5rem;
         }
     }
-} }
+} 
+
+& #inside {
+    display: grid;
+    border-top: 1px solid;
+    padding-block: 1rem;
+    & p {
+        text-align: center;
+        font-family: 'Sora', sans-serif;
+    }
+
+    & #animation-qualities {
+    display: inline-block;
+        overflow: hidden;
+        height: 2.5rem;
+        width: 100%;
+        vertical-align: bottom;
+        text-align: center;
+    }
+    
+    & span {
+        font-size: 2rem;
+            display: block;
+            animation: slideUp 5s 2s infinite ease;
+            font-family: 'Raleway';
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.25;
+        }
+        
+    span:nth-child(1), span:nth-child(4) {
+            color: pink;
+        }
+    span:nth-child(2) {
+            color: #c47da0;
+        }
+     span:nth-child(3) {
+            color: #e4b2b2;
+        }
+
+& img {
+    display: inline-block;
+    
+    width: 12rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+}
+
+& figure {
+    padding-block: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    }
+
+}
+
+@keyframes slideUp {
+    0%, 22% {
+        transform: translateY(0);
+    }
+    
+    
+    
+    23% {
+        transform: translateY(calc(-2.5rem - 15px));
+    }
+    
+    25% {
+        transform: translateY(calc(-2.5rem + 10px));
+    }
+    
+    27% {
+        transform: translateY(calc(-2.5rem - 5px));
+    }
+    
+    29% {
+        transform: translateY(calc(-2.5rem + 5px));
+    }
+    
+    
+    
+    33%, 55% {
+        transform: translateY(-2.5rem);
+    }
+
+    
+
+    56% {
+        transform: translateY(calc(-5rem - 15px));
+    }
+    
+    58% {
+        transform: translateY(calc(-5rem + 10px));
+    }
+    
+    60% {
+        transform: translateY(calc(-5rem - 5px));
+    }
+    
+    62% {
+        transform: translateY(calc(-5rem + 5px));
+    }
+
+   
+
+    66%, 88% {
+        transform: translateY(-5rem);
+    }
+
+
+
+89% {
+    transform: translateY(calc(-7.5rem - 15px));
+}
+
+91% {
+    transform: translateY(calc(-7.5rem + 10px));
+}
+
+93% {
+    transform: translateY(calc(-7.5rem - 5px));
+}
+
+95% {
+    transform: translateY(calc(-7.5rem + 5px));
+}
+
+
+
+100% {
+    transform: translateY(-7.5rem);
+}
+
+
+}
