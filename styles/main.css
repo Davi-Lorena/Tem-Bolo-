@@ -1,0 +1,36 @@
+main {
+    padding-block: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+& #variety {
+    & article {
+        text-align: center;
+        font-family: 'Sora', sans-serif;
+        
+        & strong {
+            font-size: 1.25rem;
+            color: #604a52;
+        }
+    }
+
+    & #examples {
+        padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .35rem;
+
+    & div {
+        display: grid;
+        gap: .5rem;
+    }
+        & img {
+            width: 10.5rem;
+            aspect-ratio: 1;
+            border-radius: .5rem;
+        }
+    }
+} }
