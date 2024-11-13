@@ -410,3 +410,233 @@ justify-content: center;
 
 
 }
+
+@media (width < 360px) {
+    main {
+     & #variety {
+         & article {
+            margin-inline: auto;
+             width: 315px;
+         }
+ 
+ & #examples {
+     & img {
+         width: 9rem;
+     }
+ }
+ 
+     }
+    }
+ } 
+ 
+ @media (width >= 650px) {
+     main {
+         padding-top: 1rem;
+         gap: 1rem;
+         & #variety {
+             & article {
+                 font-size: 1.25rem;
+             }
+ 
+ & #examples {
+     flex-direction: column;
+ 
+ & div {
+     display: flex;
+ }
+ 
+ & img {
+     width: 12.5rem;
+ }
+ 
+ }
+ 
+         }
+ 
+         & #inside {
+             & p {
+                 font-size: 1.25rem;
+             }
+ 
+  & img {
+     width: 15rem;
+  }
+ 
+         }
+ 
+ & #menu {
+ 
+     & h3 {
+         width: 9rem;
+         height: 4rem;
+         font-size: 1.5rem;
+     }
+ 
+     & #cakes {
+ 
+ & #layout {
+     gap: .75rem;
+ }
+ 
+ & ul {
+     margin-left: 0;
+ 
+     & li {
+         font-size: 1rem;
+     }
+ }
+ 
+ & #flavor {
+     display: grid;
+     margin-top: 1.5rem;
+ 
+ & h3 {
+     justify-self: center;
+     margin-bottom: 1.25rem;
+ }
+ 
+ & #fillings {
+     justify-content: center;
+     gap: 1rem;
+ }
+ 
+ }
+ 
+ & img {
+     width: 30rem;
+     margin-inline: auto;
+ }
+ 
+ & span {
+     font-size: 1.05rem;
+ }
+ 
+     }
+ 
+ }
+ 
+ 
+     }
+ }
+ 
+ @media (width >= 1024px) {
+     main {
+         & #variety {
+             & #examples {
+                 & img {
+                     width: 16rem;
+                 }
+             }
+         }
+ 
+ & #inside {
+     & img {
+         width: 16rem;
+     }
+     & #animation-qualities {
+         height: 5rem;
+     }
+ & span {
+     font-size: 4rem;
+ }
+ 
+ }
+ 
+ 
+     }
+ 
+ 
+     @keyframes slideUp {
+         0%, 22% {
+             transform: translateY(0);
+         }
+         
+         23% {
+             transform: translateY(calc(-5rem - 15px));
+         }
+         
+         25% {
+             transform: translateY(calc(-5rem + 10px));
+         }
+         
+         27% {
+             transform: translateY(calc(-5rem - 5px));
+         }
+         
+         29% {
+             transform: translateY(calc(-5rem + 5px));
+         }
+         
+             33%, 55% {
+                 transform: translateY(-5rem);
+             }
+         
+ 
+         
+         56% {
+             transform: translateY(calc(-10rem - 15px));
+         }
+         
+         58% {
+             transform: translateY(calc(-10rem + 10px));
+         }
+         
+         60% {
+             transform: translateY(calc(-10rem - 5px));
+         }
+         
+         62% {
+             transform: translateY(calc(-10rem + 5px));
+         }
+         
+         
+             66%, 88% {
+                 transform: translateY(-10rem);
+             }
+                 
+         89% {
+             transform: translateY(calc(-15rem - 15px));
+         }
+         
+         91% {
+             transform: translateY(calc(-15rem + 10px));
+         }
+         
+         93% {
+             transform: translateY(calc(-15rem - 5px));
+         }
+         
+         95% {
+             transform: translateY(calc(-15rem + 5px));
+         }
+         
+         
+             100% {
+                 transform: translateY(-15rem);
+             }
+         }
+      
+ 
+ }
+ 
+ @media (width >= 1280px) {
+     main {
+         & #menu {
+ 
+            & #not-cakes {
+             flex-direction: row;
+ justify-content: space-evenly;
+ align-items: start;
+ 
+ & img {
+     display: none;
+ }
+ 
+ & #candies ul {
+     gap: .75rem;
+ }
+ 
+            }
+         }
+     }
+ }
