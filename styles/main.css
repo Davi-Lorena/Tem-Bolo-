@@ -91,6 +91,120 @@ main {
 
     }
 
+    & #menu {
+        width: 100%;
+        display: grid;
+        gap: 3rem;
+        & h1 {
+            font-family: "Dancing Script", cursive;
+            font-size: 5rem;
+            text-align: center;
+            color: #604a52;
+        }
+
+        & h2 {
+            text-align: center;
+            font-family: 'Raleway';
+            font-size: 1.75rem;
+            text-decoration: underline;
+            color: #e78e8e;
+            margin-bottom: 1.5rem;
+        }
+
+        & h3 {
+            background-color: #e4b2b2;
+            width: 8rem;
+            height: 3rem;
+            border-radius: .25rem;
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            display: grid;
+            text-align: center;
+            align-items: center;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+        }
+
+        & #cakes {
+            display: grid;
+            gap: 2rem;
+
+& #layout {
+display: flex;
+justify-content: center;
+& #round-cover, #square-mass {
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+
+& h3 {
+    justify-self: center;
+}
+
+
+    & #coverage, #mass {
+        height: 8rem;
+    }
+}
+
+
+}
+
+& #flavor {
+   display: grid;
+justify-content: center;
+
+   & h3 {
+    justify-self: center;
+   }
+
+& #fillings {
+    display: flex;
+    gap: .5rem;
+
+    & #col-1, #col-2 {
+        display: grid;
+        gap: .5rem;
+    }
+
+}
+
+}
+
+            & ul {
+                display: grid;
+                gap: .5rem;
+                font-family: "Sora", sans-serif;
+
+                & li {
+                    font-size: .75rem;
+                    text-wrap: wrap;
+                }
+            }
+         
+& span {
+    font-family: 'Raleway', sans-serif;
+    font-size: .875rem;
+    text-align: center;
+    display: inline-block;
+    justify-self: center;
+}
+
+& #atention {
+    display: grid;
+    gap: .5rem;
+}
+
+& img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+        } 
+    }
+
 }
 
 @keyframes slideUp {
