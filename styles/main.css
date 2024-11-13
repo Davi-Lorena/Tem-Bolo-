@@ -202,7 +202,43 @@ justify-content: center;
     border-radius: 2rem;
 }
 
-        } 
+        }
+
+&  #not-cakes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+        & span, strong {
+            text-align: center;
+            font-family: 'Archivo';
+        }
+
+        & #candies, #choco, #truffle {
+            display: grid;
+
+& ul {
+    margin-block: 1rem;
+    display: grid;
+    justify-content: center;
+    gap: .25rem;
+}
+
+& img {
+    width: 15rem;
+    border-radius: 1rem;
+    margin-inline: auto;
+}
+
+        }
+
+        & strong {
+            padding-block: .5rem;
+            border-block: 2px solid ;
+        }
+        
+
     }
 
 }
