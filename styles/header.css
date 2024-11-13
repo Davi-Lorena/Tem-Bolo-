@@ -3,13 +3,17 @@ header {
     justify-content: center;
     gap: .5rem;
     & h1 {
-        color: #825e5e;
+        background: linear-gradient(90deg, 
+        #825e5e 0%,
+        #f8a2eb 85%,
+        #825e5e 100%);
         font-family: "Dancing Script", cursive;
         font-size: 5rem;
 text-align: center;
-        & span {
-             color: #f8a2eb;
-        }
+color: transparent;
+-webkit-background-clip: text;
+    background-clip: text;
+
 
     }
 

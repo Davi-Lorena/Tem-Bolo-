@@ -8,9 +8,15 @@
     --max-width: 85%; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html body {
     overflow-x: hidden;
-    background: #ffffff center/cover;
+    background: linear-gradient(
+        -45deg, rgb(249, 212, 218) 0%, #FFFFFF 100%
+    ) center/cover;
     font-family: 'Inter', sans-serif;
 }
 
@@ -19,9 +25,39 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.mobile-not {
+    display: none;
+}
+
+.desktop-only {
+    display: none;
+}
 
 /* Utilitary */
 .container {
     max-width: var(--max-width);
     margin-inline: auto;
+}
+
+
+
+@media (width >= 768px) {
+.mobile-not {
+    display: flex;
+}
+
+}
+
+@media (width >= 1024px) {
+    .desktop-only {
+        display: flex;
+    }    
 }
