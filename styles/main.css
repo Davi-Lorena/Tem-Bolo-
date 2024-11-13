@@ -302,6 +302,33 @@ justify-content: center;
         
         }
 
+        & #more-cakes {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            & span {
+                text-align: center; 
+            font-family: 'Archivo', sans-serif;
+            font-size: 1.25rem;
+            }
+        
+        & #cakes-photo {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            & img { 
+                display: inline-block;
+                aspect-ratio: 1;
+            width: 15rem;
+            border-radius: 1rem;
+            }
+        }
+        
+        }
+
 }
 
 @keyframes slideUp {
