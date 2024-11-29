@@ -280,6 +280,7 @@ justify-content: center;
                 width: 7rem;
                 aspect-ratio: 1;
         transition: transform 500ms ease;
+        filter:drop-shadow(1px 1px 10px #0000006c);
         
             & img {
                 width: 100%;
@@ -297,7 +298,9 @@ justify-content: center;
             text-align: center;
             font-family: 'Dancing Script', sans-serif;
             font-size: 2.5rem;
-        
+            padding-bottom: 1rem;
+        border-bottom: 1px dashed;
+
         }
         
         }
