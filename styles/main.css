@@ -258,6 +258,7 @@ justify-content: center;
             font-size: 1.75rem;
             font-weight: 500;
             transition: transform 500ms ease;
+            box-shadow: 0 0 15px #00000027;
         
             &:hover {
                 transform: translateY(-1rem);

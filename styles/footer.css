@@ -1,6 +1,6 @@
 footer {
     padding-bottom: .5rem;
-    
+    margin-right: .75rem;
     & span {
     display: flex;
     align-items: center;
@@ -17,17 +17,18 @@ footer {
         align-items: center;
 gap: .05rem;
 transition: color 500ms ease;
+text-decoration: underline;
 
-& svg path {
+/* & svg path {
     transition: fill 500ms ease;
-}
+} */
 
 &:hover {
     color: #3996DB;
 
-& svg path {
+/* & svg path {
     fill: #3996DB;
-}
+} */
 
 }
 
